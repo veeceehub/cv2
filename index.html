@@ -120,21 +120,6 @@ h2{font-family:var(--font-display);font-weight:800;font-size:clamp(2rem,4vw,3.2r
 .campaign-link:hover{border-color:var(--amber);color:var(--amber);}
 .campaign-link .icon{font-size:.9rem;}
 
-/* HARD QUESTIONS */
-#questions{background:var(--black);}
-.faq-intro{color:var(--muted);max-width:600px;margin-bottom:48px;font-size:.95rem;line-height:1.8;}
-.faq-item{border-bottom:1px solid var(--border);overflow:hidden;}
-.faq-q{display:flex;justify-content:space-between;align-items:center;padding:28px 0;cursor:pointer;gap:24px;}
-.faq-q-text{font-family:var(--font-display);font-size:1.05rem;font-weight:700;line-height:1.4;transition:color .2s;}
-.faq-q:hover .faq-q-text{color:var(--amber);}
-.faq-icon{width:32px;height:32px;border-radius:50%;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;color:var(--muted);transition:all .3s;}
-.faq-item.open .faq-icon{background:var(--amber);color:var(--black);border-color:var(--amber);transform:rotate(45deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.4,0,.2,1);}
-.faq-item.open .faq-a{max-height:600px;}
-.faq-a-inner{padding-bottom:28px;padding-right:56px;font-size:.92rem;line-height:1.85;color:var(--muted);}
-.faq-a-inner strong{color:var(--white);}
-.highlight{color:var(--amber);font-weight:500;}
-
 /* TOOLKIT */
 #toolkit{background:var(--dark);}
 .toolkit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;}
@@ -188,17 +173,6 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
 .nav-mobile a:hover{color:var(--amber);}
 @media(max-width:720px){.nav-burger{display:block;}.nav-links{display:none;}}
 </style>
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://vc-bio.netlify.app/">
-<meta property="og:title" content="Vivek Chaturvedi | Bio & Links">
-<meta property="og:description" content="Explore my professional journey, portfolio, and current ventures in Marketing and AI.">
-<meta property="og:image" content="https://vc-bio.netlify.app/thumbnail.png">
-
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://vc-bio.netlify.app/">
-<meta property="twitter:title" content="Vivek Chaturvedi | Bio & Links">
-<meta property="twitter:description" content="Explore my professional journey, portfolio, and current ventures in Marketing and AI.">
-<meta property="twitter:image" content="https://vc-bio.netlify.app/thumbnail.png">
 </head>
 <body>
 
@@ -209,8 +183,7 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
     <li><a href="#story">Story</a></li>
     <li><a href="#timeline">Career</a></li>
     <li><a href="#work">Work</a></li>
-    <li><a href="#questions">Hard Questions</a></li>
-    <li><a href="#looking">What I Want</a></li>
+    <li><a href="#looking">What I Bring</a></li>
     <li><a href="#contact">Connect</a></li>
   </ul>
   <button class="nav-burger" onclick="toggleMobileNav()" aria-label="Menu">&#9776;</button>
@@ -219,8 +192,7 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
   <a href="#story" onclick="closeMobileNav()">Story</a>
   <a href="#timeline" onclick="closeMobileNav()">Career</a>
   <a href="#work" onclick="closeMobileNav()">Work</a>
-  <a href="#questions" onclick="closeMobileNav()">Hard Questions</a>
-  <a href="#looking" onclick="closeMobileNav()">What I Want</a>
+  <a href="#looking" onclick="closeMobileNav()">What I Bring</a>
   <a href="#contact" onclick="closeMobileNav()">Connect</a>
 </div>
 
@@ -232,7 +204,7 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
   <div class="hero-content">
     <div class="hero-eyebrow">Chief Marketing &amp; AI Adoption Officer</div>
     <h1><span class="first">Vivek </span><span class="last">Chaturvedi</span></h1>
-    <p class="hero-title">Brand Builder &nbsp;·&nbsp; P&amp;L Owner &nbsp;·&nbsp; People-First Leader &nbsp;·&nbsp; Gurugram, Delhi/NCR</p>
+    <p class="hero-title">Brand Strategist &nbsp;·&nbsp; Marketing For Growth &nbsp;·&nbsp; People-First Leader &nbsp;·&nbsp; AI Savvy</p>
     <p class="hero-manifesto">"20+ years. One consistent obsession: make marketing accountable to the business, and make the business worth being accountable to."</p>
     <div class="hero-metrics">
       <div class="metric">
@@ -254,7 +226,7 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
     </div>
     <div class="hero-actions">
       <a href="#timeline" class="btn btn-primary">Explore Career →</a>
-      <a href="#questions" class="btn btn-secondary">See the Hard Questions</a>
+      <a href="#looking" class="btn btn-secondary">What I Bring →</a>
     </div>
   </div>
   <div class="hero-image-wrap">
@@ -267,7 +239,7 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
 <section id="story">
   <div class="section-inner">
     <div class="section-label fade-in">The Career in Three Acts</div>
-    <h2 class="fade-in">Not a straight line.<br>A deliberate arc.</h2>
+    <h2 class="fade-in">A learning arc<br>with category width.</h2>
     <div class="acts-grid">
       <div class="act-card fade-in">
         <div class="act-num">01</div>
@@ -285,7 +257,7 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
         <div class="act-num">03</div>
         <div class="act-period">2019 – Present</div>
         <div class="act-title">The CMO</div>
-        <div class="act-desc">CMO-level roles at Tupperware India (~4 years), Timex Group India (listed company, 16 brands across 3 SBUs), and Tynor Orthotics. Now running VeeConsult, an active advisory practice with 5 live client mandates, while looking for the right full-time role: one where leadership culture matches the ambition.</div>
+        <div class="act-desc">CMO-level roles at Tupperware India (~4 years), Timex Group India (listed company, 16 brands across 3 SBUs), and Tynor Orthotics. Now running VeeConsult, a brand and marketing advisory, with client mandates across Packaged Food, Sports Tech and Education.</div>
       </div>
     </div>
   </div>
@@ -302,21 +274,25 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
       <div class="tl-item">
         <div class="tl-date"><div class="tl-year">Jul 2025<br>Present</div><div class="tl-duration tl-long">Active</div></div>
         <div class="tl-body" onclick="toggleTL(this)">
-          <div class="tl-header"><div><div class="tl-company">VeeConsult</div><div class="tl-role">Marketing &amp; Growth Strategist</div></div><div class="tl-toggle">+</div></div>
+          <div class="tl-header"><div><div class="tl-company">VeeConsult</div><div class="tl-role">Founder, Managing Partner</div></div><div class="tl-toggle">+</div></div>
           <div class="tl-detail">
-            <div class="tl-context">A genuine consulting practice - not a placeholder. Five active client mandates across sports, design, food, AI, and social impact.</div>
+            <div class="tl-context">Running a Marketing and brand strategy consultancy. Learning &amp; applying AI in marketing extensively. Clients include - Origine Story, Sportech Innolab, Fit Nutrition, Interstar Education, NowCollab &amp; Saanjha.</div>
             <div class="advisory-grid">
-              <div class="advisory-card">
-                <div class="advisory-name">SporTech Innovation Lab</div>
-                <div class="advisory-desc">Helping build the most advanced digital public infrastructure for sports, a foundation the entire sports world will work on.</div>
-              </div>
-              <div class="advisory-card">
-                <div class="advisory-name">Enki Studio <span style="font-weight:400;color:var(--muted);font-size:.75rem;">(earlier SilberStrat)</span></div>
-                <div class="advisory-desc">Setting up processes for a new age design studio to scale sustainably.</div>
-              </div>
               <div class="advisory-card">
                 <div class="advisory-name">Origine Story</div>
                 <div class="advisory-desc">Creating a millet-based RTE D2C brand from formulation to distribution. Zero to one.</div>
+              </div>
+              <div class="advisory-card">
+                <div class="advisory-name">Sportech Innolab</div>
+                <div class="advisory-desc">Helping build the most advanced digital public infrastructure for sports, a foundation the entire sports world will work on.</div>
+              </div>
+              <div class="advisory-card">
+                <div class="advisory-name">Fit Nutrition</div>
+                <div class="advisory-desc">Repositioning the brand with a culture-led story, then rebuilding its communication for a cluttered protein category.</div>
+              </div>
+              <div class="advisory-card">
+                <div class="advisory-name">Interstar Education</div>
+                <div class="advisory-desc">Rejuvenating a two-decade-old education group with a clearly articulated vision framework.</div>
               </div>
               <div class="advisory-card">
                 <div class="advisory-name">NowCollab</div>
@@ -327,7 +303,6 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
                 <div class="advisory-desc">Empowering grassroot athletes, building the brand and visibility layer.</div>
               </div>
             </div>
-            <div class="tl-why" style="margin-top:20px;"><div class="tl-why-label">Why this, why now</div><p>After two back-to-back roles with circumstances outside my control, I chose to work on my own terms while waiting for the right full-time opportunity.</p></div>
           </div>
         </div>
       </div>
@@ -346,7 +321,6 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
               <li>Embedded ISO-grade process discipline in creative and performance execution</li>
               <li>Introduced GenAI tools for campaign content, trained the team</li>
             </ul>
-            <div class="tl-why"><div class="tl-why-label">The honest story</div><p>I joined on the strength of the founder's son, a progressive leader with a bold vision. <strong style="color:var(--white)">Within my first month, he had a family-level dispute and exited the company.</strong> The elder founder ran a traditional operation and didn't want CXO-level investment on the P&L. This wasn't my choice, but it was the right call when the mandate evaporated. I'm proud of what was built in that time.</p></div>
           </div>
         </div>
       </div>
@@ -365,7 +339,6 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
               <li>Scaled Timex DTC revenue 8X via Shopify migration, digital consolidation, assortment overhaul</li>
               <li>India SPOC for Stockholm-based Daniel Wellington, US &amp; European GTM pitch</li>
             </ul>
-            <div class="tl-why"><div class="tl-why-label">Why I left — the honest answer</div><p>I delivered. The numbers are real and public. But <strong style="color:var(--white)">leadership culture matters as much as brand prestige.</strong> The environment stopped enabling good work. I made a values choice: no title is worth trading your integrity or the joy of what you do. The right employer will understand this.</p></div>
           </div>
         </div>
       </div>
@@ -384,7 +357,6 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
               <li>Extended global "More Time Living" campaign into India as TVC</li>
               <li>Built digital-first brand marketing with PR/Influencer, Meta, Google Performance &amp; Retail, first such function in Tupperware India</li>
             </ul>
-            <div class="tl-why"><div class="tl-why-label">Why I moved</div><p>Tupperware globally was entering financial distress. India's mandate narrowed significantly. I moved deliberately toward a role with greater brand canvas: Timex Group.</p></div>
           </div>
         </div>
       </div>
@@ -401,7 +373,6 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
               <li>400+ projects across 72+ brands and categories</li>
               <li>Full P&L ownership, hiring, client relationships from Rs. 1L to Rs. 1Cr mandates</li>
             </ul>
-            <div class="tl-why"><div class="tl-why-label">Why I returned to corporate</div><p>A deliberate choice - not a fallback. After 6 years of building, I wanted to apply entrepreneurial discipline inside a brand with scale. This chapter made me a better CMO: I know what it costs to create, and I know how to hold agencies accountable because I've been on the other side.</p></div>
           </div>
         </div>
       </div>
@@ -531,43 +502,11 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
   </div>
 </section>
 
-<!-- HARD QUESTIONS -->
-<section id="questions">
-  <div class="section-inner">
-    <div class="section-label fade-in">Hard Questions</div>
-    <h2 class="fade-in">The questions you're probably asking.</h2>
-    <p class="faq-intro fade-in">I'd rather address them directly than have them surface as unspoken doubts. If a question isn't here, ask me. You'll get an honest answer.</p>
-    <div class="fade-in">
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">Your tenure track looks inconsistent, with short stints at Timex and Tynor. Are you a flight risk?</span><span class="faq-icon">+</span></div>
-        <div class="faq-a"><div class="faq-a-inner"><span style="color:var(--white);">Here's the full picture.</span> DY Works: nearly 6 years. Finding ENKI: 6 years, built from scratch. Tupperware: 4 years, with an internal promotion. That's 16 years of committed, long-term work.<br><br>The two short chapters, Timex and Tynor, both have honest explanations, shared below. <span style="color:var(--amber);">I stay when the work is meaningful and the people are right.</span> Proven twice, at scale.</div></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">Why did you leave Timex, a listed company with 16 brands, the peak of your career so far?</span><span class="faq-icon">+</span></div>
-        <div class="faq-a"><div class="faq-a-inner"><span class="highlight">Leadership culture matters as much as brand prestige. Sometimes more.</span><br><br>At Timex I delivered: 35% organic brand growth, 8X DTC, 500M+ reach. Then I made a values choice. The environment had stopped enabling good work. I watched people bear things silently. I chose not to.<br><br><strong>This is not a complaint. It's a value statement.</strong> The right employer will understand this.</div></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">What exactly happened at Tynor? Nine months is a very short tenure.</span><span class="faq-icon">+</span></div>
-        <div class="faq-a"><div class="faq-a-inner"><strong>Full transparency.</strong> I joined for the founder's son, a progressive leader with a clear vision for health-tech marketing. Within my first month, <span class="highlight">he exited over a family business dispute.</span> The mandate I was hired for ceased to exist.<br><br>In the time I was there: website 7.5X in two quarters, content, influencer, digital performance, POS, AI-powered workflows. The work was real. The timing was wrong. Bad luck, not bad judgment.</div></div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFAQ(this)"><span class="faq-q-text">You say right people matter more than right company. What does that mean in practice?</span><span class="faq-icon">+</span></div>
-        <div class="faq-a"><div class="faq-a-inner">It means I do due diligence on the leader, not just the JD. I will want to meet the CEO. I ask how decisions get made, and what happens when marketing says no to something that won't work.<br><br><span class="highlight">My mentor is Rekha Pamani Gulati, ex-CEO of DY Works.</span> She built exactly that kind of environment for over 20 years. It's not a unicorn standard. It's a reasonable one. And I know what it produces.</div></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- TOOLKIT -->
 <section id="toolkit">
   <div class="section-inner">
     <div class="section-label fade-in">Toolkit</div>
-    <h2 class="fade-in">What I bring to the table.</h2>
+    <h2 class="fade-in">The craft, the stack, the credentials.</h2>
     <div class="toolkit-grid fade-in">
       <div class="toolkit-card">
         <div class="toolkit-icon">🎯</div>
@@ -608,7 +547,7 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
       </div>
       <div style="width:1px;height:60px;background:var(--border);flex-shrink:0;"></div>
       <div>
-        <div class="section-label" style="margin-bottom:8px;">2025 Certifications</div>
+        <div class="section-label" style="margin-bottom:8px;">Certifications</div>
         <div style="font-family:var(--font-display);font-weight:700;font-size:1.05rem;">Google AI Essentials &nbsp;·&nbsp; GenAI Mastermind &nbsp;·&nbsp; GA4</div>
         <div style="color:var(--muted);font-size:.85rem;">Google Career Certificates, Outskill, Google Skillshop</div>
       </div>
@@ -616,19 +555,19 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
   </div>
 </section>
 
-<!-- LOOKING FOR -->
+<!-- WHAT I BRING -->
 <section id="looking">
   <div class="section-inner">
-    <div class="section-label fade-in">What I'm Looking For</div>
-    <h2 class="fade-in">Deliberately selective.<br>Not indefinitely available.</h2>
+    <div class="section-label fade-in">What I Bring to the Table</div>
+    <h2 class="fade-in">Twenty years.<br>Sharpened into four things.</h2>
     <div class="looking-layout fade-in">
       <div class="looking-left">
-        <p style="color:var(--muted);margin-bottom:32px;font-size:.95rem;line-height:1.8;">I'm not applying to every CMO job that moves. I'm looking for a specific kind of setup, where the work is meaningful, the leadership is healthy, and the joy of building something great is possible.</p>
+        <p style="color:var(--muted);margin-bottom:32px;font-size:.95rem;line-height:1.8;">Agency side, brand side, consulting side. Beauty, FMCG, direct-selling, luxury watches, healthcare. What travels across all of it isn't a playbook. It's a way of working.</p>
         <ul class="looking-list">
-          <li><div class="looking-dot"></div><div class="looking-text"><strong>A leader I can respect and learn from.</strong> A CEO or founder with a real vision and the humility to want a strong CMO beside them, not below them. Also, wavelength should match both ways.</div></li>
-          <li><div class="looking-dot"></div><div class="looking-text"><strong>Marketing with a genuine P&L seat.</strong> Not a function that does comms after the business decisions are made. I have been in rooms where business strategy takes shape. Am seeking such set ups.</div></li>
-          <li><div class="looking-dot"></div><div class="looking-text"><strong>A canvas that needs building, not just maintaining.</strong> I'm at my best when there's a real brand transformation challenge, not just a budget to deploy.</div></li>
-          <li><div class="looking-dot"></div><div class="looking-text"><strong>Category is secondary. Culture is primary.</strong> I've worked across beauty, FMCG, direct-selling, luxury watches, healthcare. I'll work in any category where the above three are met.</div></li>
+          <li><div class="looking-dot"></div><div class="looking-text"><strong>Marketing that sits at the P&L table.</strong> I've been in the rooms where business strategy takes shape, not the ones where comms gets briefed afterwards. I speak revenue, margin and mix before I speak campaign.</div></li>
+          <li><div class="looking-dot"></div><div class="looking-text"><strong>A builder's instinct.</strong> Built an agency from zero to 45 people. Took Timex DTC to 8X and 35% organic brand growth. Took a website 7.5X in two quarters. I'm at my best where there's something to build.</div></li>
+          <li><div class="looking-dot"></div><div class="looking-text"><strong>A category-agnostic brand lens.</strong> Five categories, three vantage points, one consistent discipline: find the truth about the consumer, then make the business act on it.</div></li>
+          <li><div class="looking-dot"></div><div class="looking-text"><strong>People-first leadership, without the poster.</strong> Teams do their best work when they're trusted and protected. I've built those teams, and I've walked away from environments that made them impossible.</div></li>
         </ul>
         <div class="mentor-card">
           <div class="mentor-label">On my mentor</div>
@@ -641,7 +580,7 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
           <p style="color:var(--muted);font-size:.88rem;line-height:1.8;">South Asian markets: Indonesia, Vietnam, Philippines, Australia, Mexico: product development and marketing alignment.<br><br>US &amp; European markets: Seasonal pitch and GTM rollout.<br><br>India SPOC for D2C growth, Stockholm-based Daniel Wellington.</p>
         </div>
         <div style="border-top:1px solid var(--border);padding-top:24px;margin-bottom:28px;">
-          <div class="section-label" style="margin-bottom:12px;">What I Bring on Day One</div>
+          <div class="section-label" style="margin-bottom:12px;">Operating Philosophy</div>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
             <li style="display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:.88rem;"><span style="color:var(--amber);margin-top:2px;">✓</span> Ability to design a lean and high-output marketing org. Build a team.</li>
             <li style="display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:.88rem;"><span style="color:var(--amber);margin-top:2px;">✓</span> AI-integrated workflows that cut production costs without cutting quality</li>
@@ -649,17 +588,6 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
             <li style="display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:.88rem;"><span style="color:var(--amber);margin-top:2px;">✓</span> IPL-scale campaign experience + D2C digital depth, covering both ends of the funnel</li>
             <li style="display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:.88rem;"><span style="color:var(--amber);margin-top:2px;">✓</span> Board-room credibility: I speak business, not just marketing</li>
           </ul>
-        </div>
-        <div style="border-top:1px solid var(--border);padding-top:24px;">
-          <div class="section-label" style="margin-bottom:12px;">Open To</div>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;">
-            <span class="result-chip">Full-time CMO</span>
-            <span class="result-chip">VP / Head of Marketing</span>
-            <span class="result-chip">Fractional CMO</span>
-            <span class="result-chip">Growth-stage Startups</span>
-            <span class="result-chip">Established Indian Brands</span>
-            <span class="result-chip">MNC India Ops</span>
-          </div>
         </div>
       </div>
     </div>
@@ -670,7 +598,6 @@ footer{background:var(--black);padding:24px 40px;display:flex;justify-content:sp
 <section id="contact">
   <div class="contact-inner">
     <h2 class="contact-headline fade-in">Let's find out if<br>this is the <span class="accent">right fit.</span></h2>
-    <p class="contact-sub fade-in">I respond quickly, without a recruitment screen. If you've read this far, we probably have something worth discussing.</p>
     <div class="contact-links fade-in">
       <a href="tel:+919873693951" class="contact-link"><span>📞</span> +91 98736 93951</a>
       <a href="#" id="email-contact-link" class="contact-link"><span>✉️</span> <span id="email-contact-display">vivek2050 [at] gmail.com</span></a>
@@ -693,13 +620,6 @@ function toggleTL(body) {
   const item = body.closest('.tl-item');
   const isOpen = item.classList.contains('open');
   document.querySelectorAll('.tl-item.open').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-
-function toggleFAQ(qEl) {
-  const item = qEl.closest('.faq-item');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
   if (!isOpen) item.classList.add('open');
 }
 
